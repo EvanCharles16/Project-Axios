@@ -15,7 +15,7 @@ axios.get('http://localhost:3000/myData')
                 company
             } = item;
             const itemHTML = `
-            <li onclick = "hapus(${id})">
+            <li>
             Name : ${name}
             <br>
             Address : ${address}
