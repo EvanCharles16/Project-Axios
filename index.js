@@ -1,7 +1,7 @@
 let data = [];
 axios.get('http://localhost:3000/myData')
     .then(response => {
-        const listHTML = document.querySelector('#listData>ol')
+        const listHTML = document.querySelector('#listData')
         data = response.data;
         console.log(data);
 
@@ -15,20 +15,30 @@ axios.get('http://localhost:3000/myData')
                 company
             } = item;
             const itemHTML = `
-            <li>
-            Name : ${name}
-            <br>
-            Address : ${address}
-            <br>
-            Email : ${email}
-            <br>
-            Phone : ${phone}
-            <br>
-            Company : ${company}
-            <br>
-                <button onclick = "ubah(${id})"<i class="fa fa-edit">Edit</i></button>
-                <button onclick = "hapus(${id})" <i class="fa fa-trash">Remove</i></button>
-            </li>
+            <div class = "col-md-3">
+                <div class = "card" style= "width:18rem;">
+                    <div class = "card-body">
+                        <img class = "circularsquare" src="./assets/2.jpg"
+                            <style = "width : 100px; height : 100px;">
+                        <div class = "center"
+                            <li>
+                            Name : ${name}
+                            <br>
+                            Address : ${address}
+                            <br>
+                            Email : ${email}
+                            <br>
+                            Phone : ${phone}
+                            <br>
+                            Company : ${company}
+                            <br>
+                                <button onclick = "ubah(${id})"<i class="fa fa-edit">Edit</i></button>
+                                <button onclick = "hapus(${id})" <i class="fa fa-trash">Remove</i></button>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
             `;
             listHTML.innerHTML += itemHTML;
         })

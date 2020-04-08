@@ -27,11 +27,43 @@ body h2{
     opacity: 0.7;
     color: white;
     border: 2px solid black;
-    
+    width: 50%;
+    margin-left: 24%;
 }
 
 .form{
     text-align: center;
+}
+
+.list{
+    margin-top: 100px;
+}
+
+.circularsquare{
+    border-radius: 50%;
+    border: 50% solid black !important;
+    height: 10em;
+    width: 10em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.center{
+    margin-top: 0.5em;
+    margin-left: 2em;
+}
+
+.card{
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+    border: 1px solid black;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
 }
 
 #addData .btn {
