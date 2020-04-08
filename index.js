@@ -1,5 +1,5 @@
 let data = [];
-axios.get('http://localhost:3001/myData')
+axios.get('http://localhost:3000/myData')
     .then(response => {
         const listHTML = document.querySelector('#listData>ol')
         data = response.data;
@@ -45,7 +45,7 @@ document.getElementById('addData').addEventListener('submit', function (event) {
     const phone = document.getElementById('phone').value;
     const company = document.getElementById('company').value;
 
-    axios.post('http://localhost:3001/myData', {
+    axios.post('http://localhost:3000/myData', {
             name,
             address,
             email,
@@ -62,7 +62,7 @@ document.getElementById('addData').addEventListener('submit', function (event) {
 })
 
 const hapus = id => {
-    axios.delete(`http://localhost:3001/myData/${id}`)
+    axios.delete(`http://localhost:3000/myData/${id}`)
 }
 
 const ubah = id => {
@@ -77,7 +77,7 @@ const ubah = id => {
         const phone = window.prompt('Phone', form.phone);
         const company = window.prompt('Company', form.company);
 
-        axios.put(`http://localhost:3001/myData/${id}`, {
+        axios.put(`http://localhost:3000/myData/${id}`, {
             name,
             address,
             email,
