@@ -1,0 +1,29 @@
+{
+  "myData": [
+    {
+      "id": 1,
+      "name": "Evan",
+      "address": "jl.blabla",
+      "email": "evan.chrls@yahoo.com",
+      "phone": "+628 123",
+      "company": "A"
+    },
+    {
+      "id": 2,
+      "name": "Ozy",
+      "address": "jl.blabla1",
+      "email": "ozy@yahoo.com",
+      "phone": "+628 124",
+      "company": "B"
+    },
+    {
+      "id": 3,
+      "name": "Indra",
+      "address": "jl.blabla2",
+      "email": "indra@yahoo.com",
+      "phone": "+628 125",
+      "company": "C"
+    }
+
+  ]
+}
