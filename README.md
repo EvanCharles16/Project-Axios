@@ -3,13 +3,12 @@
 
 ```
 * Axios
-    <ul>
-        <li>POST
-        <li>PUT
-        <li>DELETE
-        <li>GET
-    </ul>
 
+    - POST
+    - PUT
+    - DELETE
+    - GET
+    
 * json-server
 ```
 
@@ -22,13 +21,13 @@
 
 ```
 * Contact-todos
-    <ul>
-        <li>index.html
-        <li>index.js
-        <li>db.json
-        <li>README.md
-        <li>assets => trash-icon.png
-    </ul>
+    
+    - index.html
+    - index.js
+    - db.json
+    - README.md
+    - assets => trash-icon.png
+    
 ```
 
 ## Data Structure
